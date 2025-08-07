@@ -50,7 +50,7 @@ class LoginApp:
         username = self.username_entry.get()
         password = self.password_entry.get()
 
-        if username == "Kazuma" and password == "Aqua@134":
+        if username == "Admin" and password == "ABCD@1234":
             self.feedback_label.configure(text="Login successful ✅", text_color="green")
             self.reset_attempts()
         else:
@@ -92,3 +92,4 @@ if __name__ == "__main__":
     app = ctk.CTk()
     LoginApp(app)
     app.mainloop()
+
